@@ -3,10 +3,12 @@ body {
     background: linear-gradient(91deg, #D3E7E7 0.56%, #E2ECEC 98.69%);
     
 }
+
 #main-container{
     margin-left: 100px;
     margin-right: 100px;
 }
+
 header{
     position: fixed;
     height: 100PX;
@@ -18,46 +20,82 @@ header{
     justify-content: space-between;
     right: 100px;
 }
+
 #logo{
     width: 195px;
     height: 60px;
     flex-shrink: 0;
     left: 0;
 }
+
 header>nav>ul>li{
     display: inline-block;
     padding: 12px;
 }
+
 header>nav>ul>li>a{
     text-decoration: none;
 }
+
 main{
     position: relative;
     top: 120px;
 }
+
 main>section:first-child{
     display: flex;
-    align-items: center;
-    height: 80vh;
+    position: relative;
+    top: 35px;
+    height: 92vh;
 }
+main>section:first-child>div>h1{
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
 main>section:first-child>div{
-    /* background-color: rebeccapurple; */
     display: inline-block;
+    margin-right: 60px;
 }
-main>section:first-child>div>a{
+
+main>section:first-child>div>p{
+    text-align: justify;
+    font-size: 23px;
+    line-height: normal;
+}
+
+main>section:first-child>div>div{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main>section:first-child>div>div>a{
     display: inline-block;
-    
+    margin: 10px;
 }
+
 main>section:first-child>img{
-    height: 500px;
+    height: 530px;
     border-radius: 35px;
     background:lightgray 50% / cover no-repeat;
     box-shadow: 7px 8px 4px 0px rgba(0, 0, 0, 0.25);
 }
-/* *{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    text-decoration: none;
-    box-sizing: border-box;
-} */
+main>section:first-child>div>div{
+    display: flex;
+    margin-top: 0;
+}
+main>section:first-child>div>div>button{
+    width: 160px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2980b9;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+main>section:first-child>div>div>button:hover {
+    background-color: #0056b3;
+    color: #fff;
+}
