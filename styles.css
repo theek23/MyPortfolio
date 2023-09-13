@@ -11,7 +11,7 @@ body {
 
 header{
     position: fixed;
-    height: 100PX;
+    height: 70PX;
     display: flex;
     align-items: center;
     background: linear-gradient(91deg, #D3E7E7 0.56%, #E2ECEC 98.69%);
@@ -19,6 +19,7 @@ header{
     left: 100px;
     justify-content: space-between;
     right: 100px;
+    border-radius: 0 0 25px 25px;
 }
 
 #logo{
@@ -45,7 +46,7 @@ main{
 main>section:first-child{
     display: flex;
     position: relative;
-    top: 35px;
+    top: 25px;
     height: 92vh;
 }
 main>section:first-child>div>h1{
@@ -98,4 +99,14 @@ main>section:first-child>div>div>button{
 main>section:first-child>div>div>button:hover {
     background-color: #0056b3;
     color: #fff;
+}
+
+main>section:nth-child(2){
+    height: 92vh;
+    display: inline;
+    position: relative;
+    top: 25px;
+}
+main>section:nth-child(2)>h1{
+    text-align: center;
 }
