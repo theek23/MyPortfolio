@@ -28,9 +28,31 @@ header>nav>ul>li{
     display: inline-block;
     padding: 12px;
 }
+header>nav>ul>li>a{
+    text-decoration: none;
+}
 main{
     position: relative;
-    top: 100px;
+    top: 120px;
+}
+main>section:first-child{
+    display: flex;
+    align-items: center;
+    height: 80vh;
+}
+main>section:first-child>div{
+    /* background-color: rebeccapurple; */
+    display: inline-block;
+}
+main>section:first-child>div>a{
+    display: inline-block;
+    
+}
+main>section:first-child>img{
+    height: 500px;
+    border-radius: 35px;
+    background:lightgray 50% / cover no-repeat;
+    box-shadow: 7px 8px 4px 0px rgba(0, 0, 0, 0.25);
 }
 /* *{
     margin: 0;
