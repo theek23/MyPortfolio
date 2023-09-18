@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case One</title>
+    <link href="assets/fontawsome/css/all.min.css" rel="stylesheet">
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <style>
+        *{
+            font-family: 'Source Sans Pro', sans-serif;
+            font-weight: bold;
+        }
+
+        section{
+            position: relative;
+            top: 80px;
+            height: 80vh;
+            display: grid;
+            grid-row-gap: 10px;
+        }
+
+        div{
+            position: relative;
+            left: -250px;
+            background-color: purple;
+            height: 50px;
+            width: 300px;
+            /*border-bottom: green 5px solid;*/
+            box-shadow: 5px 5px 3px 0px rgba(0, 0, 0, 0.54);
+            transition: 2s;
+        }
+
+        p{
+            position: relative;
+            color: white;
+            left: 50px;
+            font-weight: bold;
+        }
+
+        p>i{
+            position: relative;
+            left: 135px;
+            font-size: 25px;
+        }
+
+        div:nth-child(1):hover{
+            left: 0;
+            transition: 2s;
+        }
+
+        div:nth-child(2):hover{
+            left: 0;
+            transition: 2s;
+        }
+
+        div:nth-child(3):hover{
+            left: 0;
+            transition: 2s;
+        }
+
+        div:nth-child(4):hover{
+            left: 0;
+            transition: 2s;
+        }
+
+        div:nth-child(5):hover{
+            left: 0;
+            transition: 2s;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<section>
+    <div>
+        <p>Menu One <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i> </p>
+
+    </div>
+    <div>
+        <p>Menu Two <i class="fa-solid fa-truck-fast" style="color: #ffffff;"></i></p>
+    </div>
+    <div>
+        <p>Menu Tree <i class="fa-solid fa-print" style="color: #ffffff;"></i></p>
+    </div>
+    <div>
+        <p>Menu Four <i class="fa-solid fa-gift" style="color: #ffffff;"></i></p>
+    </div>
+    <div>
+        <p>Menu Five <i class="fa-brands fa-windows" style="color: #ffffff;"></i></p>
+    </div>
+</section>
+</body>
+</html>
