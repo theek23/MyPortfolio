@@ -180,7 +180,6 @@ main>section:nth-child(3)>div:nth-child(2)>div>div{
     vertical-align: top;
     margin: 20px;
 }
-/* lala */
 main>section:nth-child(3)>div:nth-child(2)>div>div>div{
     display: flex;
     justify-content: center;
@@ -279,3 +278,21 @@ main>section:nth-child(3)>div:nth-child(3)>div>img{
     position: relative;
     height: 92vh;
 } */
+main>section:nth-child(4){
+    position: relative;
+    height: 92vh;
+}
+main>section:nth-child(4)>h1{
+    font-size: 35px;
+    text-align: center;
+}
+.sub-title{
+    margin-left: 25px;
+}
+main>section:nth-child(4)>section>div{
+    display: flex;
+    justify-content: center;
+}
+main>section:nth-child(4)>section>div>img{
+    margin: 20px;
+}
