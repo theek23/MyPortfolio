@@ -180,6 +180,7 @@ main>section:nth-child(3)>div:nth-child(2)>div>div{
     vertical-align: top;
     margin: 20px;
 }
+/* lala */
 main>section:nth-child(3)>div:nth-child(2)>div>div>div{
     display: flex;
     justify-content: center;
@@ -206,6 +207,13 @@ main>section:nth-child(3)>div:nth-child(2)>div>div>div>h3{
     background-color: #D9D9D9;
     border-radius: 20px;
     text-align: center;
+}
+main>section:nth-child(3)>div:nth-child(2)>div>div>div>h3,main>section:nth-child(3)>div:nth-child(2)>div>div>div>div{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main>section:nth-child(3)>div:nth-child(2)>div>div>div>h3:hover, main>section:nth-child(3)>div:nth-child(2)>div>div>div>div:hover{
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.4); 
 }
 main>section:nth-child(3)>div:nth-child(2)>div>div>div:nth-child(3)>ul{
     margin-left: 20px;
@@ -248,7 +256,20 @@ main>section:nth-child(3)>div:nth-child(2)>div>div>div:nth-child(3)>ul>li {
 main>section:nth-child(3)>div:nth-child(3)>div{
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 50px;
+}
+main>section:nth-child(3)>div:nth-child(3)>div>img{
+    border-radius: 20px;
+    background-color: #9B9B9B;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+main>section:nth-child(3)>div:nth-child(3)>div>img:hover{
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.4); 
+}
+main>section:nth-child(3)>div:nth-child(3)>div:first-child{
+    margin-top: 20px !important;
 }
 main>section:nth-child(3)>div:nth-child(3)>div>img{
     margin-left: 20px;
