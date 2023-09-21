@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/necolas.github.io_normalize.css_8.0.1_normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="responsive.css">
     
@@ -38,7 +39,7 @@
             <!----------------------------Home Section Start-------------------------------->
             <section id="home">
                 <div>
-                    <h1>
+                    <h1 class="animate__animated animate__backInDown">
                         <span style="color: black;">I'm</span>
                         <span style="color: #0057FF;">Theekshana</span>
                         <span style="color: #F0AD01;">De Silva</span>
@@ -60,11 +61,13 @@
                     </div>
                 </div>
                 <img src="assets\Profile.jpeg" alt="theekshana de silva photo" height="300px">
+                <section style="height: 1000px;"></section>
+                <h4 id="about"></h4>
             </section>
             <!----------------------------Home Section End-------------------------------->
             <!----------------------------About Section Start-------------------------------->
-            <section id="about">
-                <h1>
+            <section>
+                <h1 class="animate__animated animate__backInDown">
                     <span style="color: black;">-About</span>
                     <span style="color: #F0AD01;">Me</span>
                     <span style="color: black;">-</span>
@@ -76,6 +79,8 @@
                     <p>I have completed my computer business information system HND at NIBM and have also successfully completed a Rapid Mobile Application Development course.</p>
                     <br>
                     <p>I have 5+ years of hand zone skills related to development. And already I have started my software company.</p>
+                <p id="skills"></p>
+
                 </div>
                 <div class="info-box1">
                     <h3>Personal Info</h3>
@@ -83,11 +88,12 @@
                 <div class="info-box2">
                     <h3>Title</h3>
                     <p></p>
+                    
                 </div>
             </section>
             <!----------------------------About Section End-------------------------------->
             <!----------------------------Skills Section Start-------------------------------->
-            <section id="skills">
+            <section >
                 <h1>
                     <span style="color: black;">-</span>
                     <span style="color: #F0AD01;">Skills</span>
@@ -195,27 +201,39 @@
                     <span style="color: black;">-</span>
                 </h1>
                 <section id="my-projects">
-                    <h3 class="sub-title">My Projects</h3>
+                    <h3 class="sub-title">
+                        <span style="color: black;">-My</span>
+                        <span style="color: #F0AD01;">Projects</span>
+                        <span style="color: black;">-</span>
+                    </h3>
                     <div>
-                        <img src="assets/example.png" alt="example" width="350px">
-                        <img src="assets/example.png" alt="example" width="350px">
-                        <img src="assets/example.png" alt="example" width="350px">
+                        <div>
+                            <img class="project-img" src="assets/example.png" alt="example" width="350px">
+                            <img class="project-img" src="assets/example.png" alt="example" width="350px">
+                            <img class="project-img" src="assets/example.png" alt="example" width="350px">
+                        </div>
+                        <div>
+                            <img class="project-img" src="assets/example.png" alt="example" width="350px">
+                            <img class="project-img" src="assets/example.png" alt="example" width="350px">
+                            <img class="project-img" src="assets/example.png" alt="example" width="350px">
+                        </div>
+                        <a class="seemore" href="">See more...</a>
                     </div>
-                    <div>
-                        <img src="assets/example.png" alt="example" width="350px">
-                        <img src="assets/example.png" alt="example" width="350px">
-                        <img src="assets/example.png" alt="example" width="350px">
-                    </div>
+                    
                 </section>
                 <section id="assignments">
-                    <h3 class="sub-title">Assignments</h3>
+                    <h3 class="sub-title">
+                        <span style="color: black;">-</span>
+                        <span style="color: #F0AD01;">Assignments</span>
+                        <span style="color: black;">-</span>
+                    </h3>
                     <div>
-                        <img src="assets/example.png" alt="example" width="200px">
-                        <img src="assets/example.png" alt="example" width="200px">
-                        <img src="assets/example.png" alt="example" width="200px">
-                        <img src="assets/example.png" alt="example" width="200px">
-                        <img src="assets/example.png" alt="example" width="200px">
-                        <img src="assets/example.png" alt="example" width="200px">
+                        <img class="assignments" src="assets/example.png" alt="example" width="250px">
+                        <img class="assignments" src="assets/example.png" alt="example" width="250px">
+                        <img class="assignments" src="assets/example.png" alt="example" width="250px">
+                        <img class="assignments" src="assets/example.png" alt="example" width="250px">
+                        <br>
+                        <a class="seemore" href="">See more...</a>
                     </div>
                 </section>
             </section>
@@ -297,4 +315,4 @@
         <footer></footer>
     </section>
 </body>
-</html>   
+</html>

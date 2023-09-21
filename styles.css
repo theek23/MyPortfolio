@@ -4,6 +4,9 @@
         margin-right: 20px;
     }
  } */
+ *{
+    scroll-behavior: smooth;
+ }
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(91deg, #D3E7E7 0.56%, #E2ECEC 98.69%);
@@ -246,6 +249,7 @@ main>section:nth-child(3)>div:nth-child(2)>div>div>div:nth-child(3)>ul>li {
     width: 40px;
     height: 40px;
 }
+/* methana absolute balanna */
 .line-img{
     position: absolute;
     height: 200px;
@@ -279,21 +283,44 @@ main>section:nth-child(3)>div:nth-child(3)>div>img{
     position: relative;
     height: 92vh;
 } */
+
+/* Skills section */
 main>section:nth-child(4){
     position: relative;
-    height: 92vh;
+    height: 135vh;
 }
 main>section:nth-child(4)>h1{
     font-size: 35px;
     text-align: center;
 }
 .sub-title{
-    margin-left: 25px;
+    margin-left: 150px;
+    font-size: 23px;
 }
-main>section:nth-child(4)>section>div{
+/* main>section:nth-child(4)>section>div{
     display: flex;
     justify-content: center;
+} */
+main>section:nth-child(4)>section>div:nth-child(2){
+    text-align: center;
 }
-main>section:nth-child(4)>section>div>img{
+.project-img{
+    border-radius: 20px;
+    background-color: #D9D9D9;
+    margin: 10px 30px 35px 30px;
+}
+.seemore{
+    color: #2F37F0;
+    text-decoration: none;
+}
+.assignments{
     margin: 20px;
+}
+.assignments-main-box{
+    background-color: white;
+    opacity: 52%;
+    display: inline-block;
+}
+main>section:nth-child(4)>section:nth-child(3)>div:nth-child(2){
+    
 }
