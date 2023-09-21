@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 800px;
+            margin: 50px auto;
+            overflow: hidden;
+        }
+
+        .slider {
+            display: flex;
+            width: 500%;
+            animation-name: slide-animation;
+            animation-duration: 10s; 
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        .slider>div {
+            flex: 1;
+            max-width: calc(500%/5);  
+            height: 100%;
+        }
+
+        img {
+            width: 800px;
+            height: 100%;
+        }
+
+        @keyframes slide-animation {
+            0% {
+                right: 0%;
+            }
+            25% {
+                right: 100%;
+            }
+            50% {
+                right: 200%;
+            }
+            75% {
+                right: 300%;
+            }
+            100% {
+                right: 300%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="slider"> 
+            <div><img src="asset/img_1.png" alt=""></div>
+            <div><img src="asset/img_2.png" alt=""></div>
+            <div><img src="asset/img_3.png" alt=""></div>
+            <div><img src="asset/img_4.png" alt=""></div>
+            <div><img src="asset/img_5.png" alt=""></div>
+        </div>
+    </div>
+</body>
+</html>
