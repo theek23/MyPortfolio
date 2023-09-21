@@ -2,63 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Slider</title>
     <style>
-        div {
+        main {
             width: 800px;
-            margin: 50px auto;
+            height: 500px;
+            border: 2px solid black;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
             overflow: hidden;
         }
 
-        .slider {
+        main > section {
+            width: calc(100% * 5);
+            height: 100%;
+            /*border: 2px solid red;*/
             display: flex;
-            width: 500%;
-            animation-name: slide-animation;
-            animation-duration: 10s; 
+
+            animation-name: slide_me;
+            animation-duration: 10s;
             animation-iteration-count: infinite;
-            animation-timing-function: linear;
         }
 
-        .slider>div {
-            flex: 1;
-            max-width: calc(500%/5);  
+        main > section > div {
+            flex-grow: 1;
             height: 100%;
+            /*border: 2px solid green;*/
         }
 
-        img {
-            width: 800px;
-            height: 100%;
+        main > section > div:nth-child(1) {
+            /*background: red;*/
+            background: url("asset/img_1.png");
+            background-size: cover;
+            background-position: center;
         }
 
-        @keyframes slide-animation {
+        main > section > div:nth-child(2) {
+            /*background: red;*/
+            background: url("asset/img_2.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(3) {
+            /*background: red;*/
+            background: url("asset/img_3.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(4) {
+            /*background: red;*/
+            background: url("asset/img_4.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        main > section > div:nth-child(5) {
+            /*background: red;*/
+            background: url("asset/img_5.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        @keyframes slide_me {
             0% {
-                right: 0%;
+                transform: translateX(0px);
             }
             25% {
-                right: 100%;
+                transform: translateX(calc((-100%/5)*1));
             }
             50% {
-                right: 200%;
+                transform: translateX(calc((-100%/5)*2));
             }
             75% {
-                right: 300%;
+                transform: translateX(calc((-100%/5)*3));
             }
             100% {
-                right: 300%;
+                transform: translateX(calc((-100%/5)*4));
             }
+
         }
     </style>
 </head>
 <body>
-    <div>
-        <div class="slider"> 
-            <div><img src="asset/img_1.png" alt=""></div>
-            <div><img src="asset/img_2.png" alt=""></div>
-            <div><img src="asset/img_3.png" alt=""></div>
-            <div><img src="asset/img_4.png" alt=""></div>
-            <div><img src="asset/img_5.png" alt=""></div>
-        </div>
-    </div>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
 </body>
 </html>
