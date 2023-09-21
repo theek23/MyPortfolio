@@ -21,6 +21,7 @@ header{
     align-items: center;
     background: linear-gradient(91deg, #D3E7E7 0.56%, #E2ECEC 98.69%);
     z-index: 1;
+    top: 0;
     left: 100px;
     justify-content: space-between;
     right: 100px;
