@@ -556,3 +556,27 @@ main>section:nth-child(8) > h1 {
 .social-icons>a>img:hover {
     transform: scale(1.20); 
 }
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 70px;
+}
+.contact-info{
+    text-align: center;
+    display: block;
+    height: 500px;
+    width: 700px;
+}
+.contact-form{
+    height: 500px;
+    width: 700px;
+}
+.contact-info>div{
+    display: flex;
+    align-items: center;
+}
+.contact-icons{
+    margin-right: 20px;
+}
