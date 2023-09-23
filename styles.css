@@ -549,8 +549,10 @@ main>section:nth-child(8) > h1 {
 .social-icons>a{
     margin-left: 30px;
     margin-right: 30px;
-    transition: transform 0.4s ease;
 }
-.social-icons>a:hover {
+.social-icons>a>img{
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.social-icons>a>img:hover {
     transform: scale(1.20); 
 }
