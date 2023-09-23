@@ -22,7 +22,7 @@
     <section id="main-container">
         <!----------------------------Navigation Bar Start----------------------------->
         <header>
-            <img id="logo" src="assets\logo.png" alt="logo">
+            <a href="#home"><img id="logo" src="assets\logo.png" alt="logo"></a>
             <nav>
                 <ul>
                     <li><a href="#about">About Me</a></li>
@@ -35,9 +35,9 @@
             </nav>
         </header>
         <!----------------------------Navigation Bar End----------------------------->
-        <main>
+        <main id="home">
             <!----------------------------Home Section Start-------------------------------->
-            <section id="home">
+            <section >
                 <div>
                     <h1 class="animate__animated animate__backInDown">
                         <span style="color: black;">I'm</span>
@@ -62,11 +62,11 @@
                 </div>
                 <img src="assets\Profile.jpeg" alt="theekshana de silva photo" height="300px">
                 <section style="height: 1000px;"></section>
-                <h4 id="about"></h4>
+                <h4></h4>
             </section>
             <!----------------------------Home Section End-------------------------------->
             <!----------------------------About Section Start-------------------------------->
-            <section>
+            <section id="about">
                 <h1 class="animate__animated animate__backInDown">
                     <span style="color: black;">-About</span>
                     <span style="color: #F0AD01;">Me</span>
@@ -227,21 +227,49 @@
                         <span style="color: #F0AD01;">Assignments</span>
                         <span style="color: black;">-</span>
                     </h3>
-                    <div>
-                        <img class="assignments" src="assets/example.png" alt="example" width="250px">
-                        <img class="assignments" src="assets/example.png" alt="example" width="250px">
-                        <img class="assignments" src="assets/example.png" alt="example" width="250px">
-                        <img class="assignments" src="assets/example.png" alt="example" width="250px">
-                        <br>
-                        <a class="seemore" href="">See more...</a>
+                    <section class="assignment-asset">
+                        <div class="assignment-asset-subdiv">
+                            <div class="assignments">
+                                <img class="assignments-img" src="assets/example.png" alt="example">
+                                <h1 class="assignmnet-title">Assignment 01</h1>
+                            </div>
+                            <div class="assignments">
+                                <img class="assignments-img" src="assets/example.png" alt="example">
+                                <h1 class="assignmnet-title">Assignment 02</h1>
+                            </div>
+                            <div class="assignments">
+                                <img class="assignments-img" src="assets/example.png" alt="example">
+                                <h1 class="assignmnet-title">Assignment 03</h1>
+                            </div>
+                            <div class="assignments">
+                                <img class="assignments-img" src="assets/example.png" alt="example">
+                                <h1 class="assignmnet-title">Assignment 04</h1>
+                            </div>
+                            <div class="assignments">
+                                <img class="assignments-img" src="assets/example.png" alt="example">
+                                <h1 class="assignmnet-title">Assignment 05</h1>
+                            </div>
+                        </div>
+                    </section>
+                    <br>
+                    <br>
+                    <div class="seemore-assignments">
+                        <a class="seemore" href="assignments/assignments.html" target="_blank">See more...</a>
                     </div>
                 </section>
             </section>
             <!----------------------------Projects Section End -------------------------------->
             <!----------------------------Activities Section Start-------------------------------->
             <section id="activities">
-                <h1>Activities</h1>
-                <img src="assets/html5-game.png" alt="game image" height="450px">
+                <h1>
+                    <span style="color: #F0AD01;">-</span>
+                    <span style="color: black;">Activities</span>
+                    <span style="color: #F0AD01;">-</span>
+                </h1>
+                <div>
+                    <img class="activities-img" src="assets/html5-game.png" alt="">
+                    <p>Coming Soon...</p>
+                </div>
             </section>
             <!----------------------------Activities Section End-------------------------------->
             <!----------------------------Gallery Section Start-------------------------------->

@@ -47,16 +47,11 @@ header>nav>ul>li>a{
     text-decoration: none;
 }
 
-main{
-    position: relative;
-    top: 120px;
-}
-
 main>section:first-child{
     display: flex;
     position: relative;
-    top: 25px;
-    height: 92vh;
+    top: 140px;
+    height: 94vh;
 }
 main>section:first-child>div>h1{
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
@@ -113,6 +108,7 @@ main>section:first-child>div>div>button{
     color: #FFF;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
+    font-size: 17px;
 }
 
 main>section:first-child>div>div>button:hover {
@@ -287,20 +283,17 @@ main>section:nth-child(3)>div:nth-child(3)>div>img{
 /* Skills section */
 main>section:nth-child(4){
     position: relative;
-    height: 135vh;
+    height: 170vh;
 }
 main>section:nth-child(4)>h1{
     font-size: 35px;
     text-align: center;
 }
 .sub-title{
-    margin-left: 150px;
+    margin-left: 65px;
+    margin-bottom: 75px;
     font-size: 23px;
 }
-/* main>section:nth-child(4)>section>div{
-    display: flex;
-    justify-content: center;
-} */
 main>section:nth-child(4)>section>div:nth-child(2){
     text-align: center;
 }
@@ -308,19 +301,125 @@ main>section:nth-child(4)>section>div:nth-child(2){
     border-radius: 20px;
     background-color: #D9D9D9;
     margin: 10px 30px 35px 30px;
+    transition: filter 0.3s;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.project-img:hover{
+    filter: brightness(0.7);
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.4); 
 }
 .seemore{
     color: #2F37F0;
     text-decoration: none;
+    text-align: center;
+}
+
+.assignment-asset{
+    width: 700px;
+    height: 350px;
+    border-left:2px  solid black;
+    border-right: 2px solid black;
+    border-radius: 1%;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+}
+.assignment-asset-subdiv{
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: calc(100% * 5);
+
+    animation-name: slide_me;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
 .assignments{
-    margin: 20px;
+    display: block;
+    text-align: center;
+    flex-grow: 1;
+    height: 100%;
 }
-.assignments-main-box{
-    background-color: white;
-    opacity: 52%;
-    display: inline-block;
+@keyframes slide_me {
+    0% {
+        transform: translateX(0px);
+    }
+    25% {
+        transform: translateX(calc((-100%/5)*1));
+    }
+    50% {
+        transform: translateX(calc((-100%/5)*2));
+    }
+    75% {
+        transform: translateX(calc((-100%/5)*3));
+    }
+    100% {
+        transform: translateX(calc((-100%/5)*4));
+    }
+
 }
-main>section:nth-child(4)>section:nth-child(3)>div:nth-child(2){
-    
+.assignmnet-title{
+    font-size: 30px;
 }
+.assignments-img{
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+
+}
+.assignments-img:hover{
+    filter: brightness(0.7);
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.4); 
+}
+.seemore-assignments{
+    text-align: center;
+}
+/* Activities */
+
+/* main>section:nth-child(5) {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main>section:nth-child(5) > h1 {
+    font-size: 35px;
+    text-align: center;
+}
+
+main>section:nth-child(5) > div {
+    position: relative;
+}
+
+main>section:nth-child(5) > div > img {
+    width: 800;
+}
+main>section:nth-child(5) > div > p {
+    text-align: center;
+    font-size: 45px;
+    color: white;
+    font-weight: 700;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+.activities-img{
+    width: 900px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    filter: brightness(0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+.activities-img:hover{
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.4); 
+    transform: scale(1.05); 
+} */
