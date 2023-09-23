@@ -380,7 +380,7 @@ main>section:nth-child(4)>section>div:nth-child(2){
 }
 /* Activities */
 
-/* main>section:nth-child(5) {
+main>section:nth-child(5) {
     position: relative;
     height: 100vh;
     display: flex;
@@ -422,4 +422,4 @@ main>section:nth-child(5) > div > p {
 .activities-img:hover{
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.4); 
     transform: scale(1.05); 
-} */
+}
