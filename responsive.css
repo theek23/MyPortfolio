@@ -1,18 +1,47 @@
-@media (max-width: 768px) {
-    #main-container {
-        margin-left: 20px;
-        margin-right: 20px;
+/* @media all and (min-width: 1025px) and (max-width: 1440px) {
+    main>section:first-child{
+        top: 140px;
+        height: 92vh;
     }
-    main>section:first-child>div>h1{
-        font-size: 30px;
+}
+@media all and (min-width: 769px) and (max-width: 1024px){
+    main>section:first-child{
+        top: 140px;
+        height: 92vh;
+        background-color: black;
     }
-    main>section:first-child>div>p{
-        font-size: 18px;
+} */
+@media all and (min-width: 321px) and (max-width: 375px){
+    #main-container{
+        margin-left: 10ox;
+        margin-right: 10px;
+    }
+    header>nav {
+        display: none;
+    }
+    #logo {
+        text-align: center;
+    }
+    main>section:first-child{
+        top: 140px;
+        height: -100vh;
     }
     main>section:first-child>img{
-        height: 2px;
+        display: none;
     }
-    main>section:first-child>div{
-        display: block;
+
+    /* about me */
+
+    main>section:nth-child(2){
+        height: 252vh;
+        position: relative;
+        text-align: center;
     }
- }
+
+    main>section:nth-child(2)>div{
+        width: 460px;
+    }
+
+
+    /* skills */
+}

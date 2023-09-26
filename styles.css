@@ -4,9 +4,9 @@
         margin-right: 20px;
     }
  } */
- *{
-    scroll-behavior: smooth;
- }
+*{
+scroll-behavior: smooth;
+}
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(91deg, #D3E7E7 0.56%, #E2ECEC 98.69%);
@@ -171,6 +171,7 @@ main>section:nth-child(3)>div{
 }
 main>section:nth-child(3)>div:nth-child(2)>div{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
 }
 main>section:nth-child(3)>div:nth-child(2)>div>div{
