@@ -2,104 +2,83 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Slider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../assests/normalize.css">
+    <title>Animation case02</title>
     <style>
-        main {
-            width: 800px;
-            height: 500px;
-            border: 2px solid black;
+        body{
+            background-color: #00004c;
+        }
+
+        #hide-curcle{
             position: absolute;
-            left: 0;
             right: 0;
+            left: 0;
             top: 0;
             bottom: 0;
             margin: auto;
-            overflow: hidden;
-        }
-
-        main > section {
-            width: calc(100% * 5);
-            height: 100%;
-            /*border: 2px solid red;*/
-            display: flex;
-
-            animation-name: slide_me;
-            animation-duration: 10s;
+            width: 275px;
+            height: 275px;
+            border-radius: 50%;
+            background-color: antiquewhite;
+            animation-name: move-curcle;
+            animation-duration: 8s;
             animation-iteration-count: infinite;
         }
-
-        main > section > div {
-            flex-grow: 1;
-            height: 100%;
-            /*border: 2px solid green;*/
+        #stable-curcle{
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background-color: #00004c;
         }
 
-        main > section > div:nth-child(1) {
-            /*background: red;*/
-            background: url("asset/img_1.png");
-            background-size: cover;
-            background-position: center;
-        }
-
-        main > section > div:nth-child(2) {
-            /*background: red;*/
-            background: url("asset/img_2.png");
-            background-size: cover;
-            background-position: center;
-        }
-
-        main > section > div:nth-child(3) {
-            /*background: red;*/
-            background: url("asset/img_3.png");
-            background-size: cover;
-            background-position: center;
-        }
-
-        main > section > div:nth-child(4) {
-            /*background: red;*/
-            background: url("asset/img_4.png");
-            background-size: cover;
-            background-position: center;
-        }
-
-        main > section > div:nth-child(5) {
-            /*background: red;*/
-            background: url("asset/img_5.png");
-            background-size: cover;
-            background-position: center;
-        }
-
-        @keyframes slide_me {
-            0% {
-                transform: translateX(0px);
+        @keyframes move-curcle{
+            0%{
+                left: 0;
+                bottom: 0; 
+                right: 0;
+                top: 0;
+                box-shadow: 0px 0px 70px 20px antiquewhite;
             }
-            25% {
-                transform: translateX(calc((-100%/5)*1));
+            25%{
+                left: 75px;
+                bottom: 75px;
+                right: 0;
+                top: 0;
+                box-shadow: 0px 0px 0px 0px antiquewhite;
             }
-            50% {
-                transform: translateX(calc((-100%/5)*2));
+            50%{
+                left: 0;
+                bottom: 0; 
+                right: 0;
+                top: 0;
+                box-shadow: 0px 0px 70px 20px antiquewhite;
             }
-            75% {
-                transform: translateX(calc((-100%/5)*3));
+            75%{
+                left: 0;
+                bottom: 0; 
+                right: 75px;
+                top: 75px;
+                box-shadow: 0px 0px 0px 0px antiquewhite;
             }
-            100% {
-                transform: translateX(calc((-100%/5)*4));
+            100%{
+                left: 0;
+                bottom: 0; 
+                right: 0;
+                top: 0;
+                box-shadow: 0px 0px 70px 20px antiquewhite;
             }
-
         }
     </style>
 </head>
 <body>
-
-<main>
-    <section>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-    </section>
-</main>
-
+    <div id="hide-curcle"></div>
+    <div id="stable-curcle"></div>
 </body>
 </html>

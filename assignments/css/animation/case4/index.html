@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../assests/normalize.css">
+    <title>Animation case04</title>
+    <style>
+        main{
+            position: relative;
+            height: 100vh;
+            background-image: url(assets/sky.jpg);
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            bottom: -5px;
+            right: 0;
+            left: 0;
+            z-index: 1;
+            animation-name: city;
+            animation-duration: 14s;
+            animation-iteration-count: infinite;
+        }
+        .city-container{
+            display: flex;
+            margin-bottom: -5px;
+        }
+        .city-container #city{
+            display: inline-block;
+        }
+        .road-container #road{
+           display: inline-block;
+        }
+        .road-container{
+            display: flex;
+        }
+
+        .car-container{ 
+            position: absolute;
+            width: max-content;
+            left: 0;
+            right: 0;
+            bottom: 142px;
+            margin: auto;
+            z-index: 2;
+        }
+        .car-container #back-wheel{
+            position: absolute;
+            display: inline-block;
+            bottom: 8px;
+            left: 30px;
+        }
+        .car-container #font-wheel{
+            position: absolute;
+            display: inline-block;
+            bottom: 8px;
+            left: 275px;
+        }
+
+        .car-container .img-wheel{
+            transform: rotate(0);
+            animation-name: wheel;
+            animation-duration: 14s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes city{
+            from{
+                transform: translateX(0px);
+            }
+            to{
+                transform: translateX(-6000px);
+            }
+        }
+
+        @keyframes wheel{
+            0%{
+                transform: rotate(0);
+            }
+            50%{
+                transform: rotate(-720deg);
+            }
+            100%{
+                transform: rotate(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section class="car-container">
+            <div id="car"><img width="400px" src="asset/car.png" alt="car img not found"></div>
+            <div class="wheel" id="back-wheel"><img class="img-wheel" width="80px" src="asset/wheel.png" alt=""></div>
+            <div class="wheel" id="font-wheel"><img class="img-wheel" width="80px" src="asset/wheel.png" alt=""></div>
+        </section>
+        <section class="main-container">
+            <section class="city-container">
+                <div id="city">
+                    <img width="2000px" src="asset/city.png" alt="city img not found">
+                </div>
+                <div id="city">
+                    <img width="2000px" src="asset/city.png" alt="city img not found">
+                </div>
+                <div id="city">
+                    <img width="2000px" src="asset/city.png" alt="city img not found">
+                </div>
+                <div id="city">
+                    <img width="2000px" src="asset/city.png" alt="city img not found">
+                </div>
+            </section>
+            <section class="road-container">
+                <div id="road">
+                    <img width="4000px" src="asset/road.jpg" alt="road img bot found">
+                </div>
+                <div id="road">
+                    <img width="4000px" src="asset/road.jpg" alt="road img bot found">
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+</html>

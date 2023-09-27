@@ -24,7 +24,7 @@
     }
     main>section:first-child{
         top: 140px;
-        height: -100vh;
+        height: 100vh;
     }
     main>section:first-child>img{
         display: none;
