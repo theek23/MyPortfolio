@@ -1,4 +1,4 @@
-/* Mobile Medium */
+/* Mobile Medium 320-375 */
 @media all and (min-width: 320px) and (max-width: 375px){
     #main-container{
         width: 100%;
@@ -28,7 +28,7 @@
     }
     main>section:first-child{
         top: 100px;
-        height: 138vh;
+        height: max-content;
         text-align: center;
         /*width: 99%;*/
     }
@@ -164,7 +164,7 @@
         margin-top: 40px;
     }
 }
-/* Mobile Large */
+/* Mobile Large 375-325 */
 @media all and (min-width: 375px) and (max-width: 425px){
     #main-container{
         width: 100%;
@@ -330,7 +330,7 @@
         margin-top: 40px;
     }
 }
-/* Tab medium */
+/* Tab medium 425-768 */
 @media all and (min-width: 425px) and (max-width: 768px){
     #main-container{
         width: 100%;
@@ -360,7 +360,7 @@
     }
     main>section:first-child{
         top: 100px;
-        height: 165vh;
+        height: 195vh;
         text-align: center;
     }
     main>section:first-child>div {
@@ -391,9 +391,7 @@
     /* about me */
 
     main>section:nth-child(2){
-        height: 200vh;
-        position: relative;
-        text-align: center;
+        height: 290vh;
     }
 
     main>section:nth-child(2)>div{
@@ -403,7 +401,7 @@
 
     /* skills */
     main>section:nth-child(3){
-        height: 165vh;
+        height: 200vh;
     }
     .programming-container,
     .tools {
@@ -519,7 +517,7 @@
         align-items: center;
     }
 }
-/* Tab Large */
+/* Tab Large 768-978*/
 @media all and (min-width: 768px) and (max-width: 978px){
     #main-container{
         width: 100%;
@@ -708,6 +706,7 @@
         align-items: center;
     }
 }
+/* laptop small 978-1024 */
 @media all and (min-width: 978px) and (max-width: 1024px){
     header>nav>ul>li{
         padding: 8px;
@@ -729,9 +728,7 @@
 
     /* about me */
     main>section:nth-child(2){
-        height: 200vh;
-        position: relative;
-        text-align: center;
+        height: max-content;
     }
     main>section:nth-child(2)>div{
         width: 366px;
@@ -739,7 +736,7 @@
 
     /* skills */
     main>section:nth-child(3){
-        height: 180vh;
+        height: max-content;
     }
     .programming-container{
         display: flex;
@@ -753,7 +750,7 @@
     /* projects */
 
     main>section:nth-child(4){
-        height: 230vh;
+        height: max-content;
     }
     main>section:nth-child(4)>section>div:nth-child(2) {
         flex-direction: row;
@@ -763,11 +760,55 @@
         display: flex;
         flex-direction: column;
     }
+    /* services */
 
+    main>section:nth-child(7){
+        height: max-content;
+    }
+}
+/* laptop medium 1024-1440 */
+@media all and (min-width: 1025px) and (max-width: 1440px){
+    main>section:first-child{
+        height: 83vh;
+    }
+    main>section:first-child>div>h1{
+        font-size: 35px;
+    }
+    main>section:first-child>div>p{
+        font-size: 23px;
+    }
+    main>section:first-child>img{
+        height: 500px;
+    }
+    /* about */
+    main>section:nth-child(2){
+        height: max-content;
+    }
+    main>section:nth-child(2)>div{
+        width: 366px;
+        height: 520px;
+    }
+
+    /* skills */
+    main>section:nth-child(3){
+        height: max-content;
+    }
+
+    /* projects */
+
+    main>section:nth-child(4){
+        height: max-content;
+    }
+
+    /* Activities */
+
+    main>section:nth-child(5){
+        height: 85vh;
+    }
 
     /* services */
 
     main>section:nth-child(7){
-        height: 130vh;
+        height:max-content;
     }
 }
