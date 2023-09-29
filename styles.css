@@ -20,7 +20,7 @@ body {
 header{
     position: fixed;
     height: 70PX;
-    width: max-content;
+    width: auto;
     display: flex;
     align-items: center;
     background: linear-gradient(91deg, #D3E7E7 0.56%, #E2ECEC 98.69%);
@@ -58,7 +58,9 @@ main>section:first-child>div>h1{
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     font-size: 35px;
 }
-
+main>section:first-child>div>img{
+    display: none;
+}
 main>section:first-child>div{
     display: inline-block;
     margin-right: 60px;

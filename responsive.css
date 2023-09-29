@@ -1,16 +1,4 @@
-/* @media all and (min-width: 1025px) and (max-width: 1440px) {
-    main>section:first-child{
-        top: 140px;
-        height: 92vh;
-    }
-}
-@media all and (min-width: 769px) and (max-width: 1024px){
-    main>section:first-child{
-        top: 140px;
-        height: 92vh;
-        background-color: black;
-    }
-} */
+
 @media all and (min-width: 320px) and (max-width: 375px){
     #main-container{
         width: 100%;
@@ -28,6 +16,9 @@
     h1{
         font-size: 25px;
     }
+    header{
+        justify-content: center;
+    }
     header>nav {
         display: none;
     }
@@ -40,6 +31,13 @@
         height: 138vh;
         text-align: center;
         /*width: 99%;*/
+    }
+    main>section:first-child>div{
+        margin-right: 0;
+    }
+    main>section:first-child>div>p{
+        margin-left: 20px;
+        margin-right: 20px;
     }
     main>section:first-child>img{
         display: none;
@@ -167,7 +165,7 @@
     }
 }
 
-@media all and (min-width: 375px) and (max-width: 426px){
+@media all and (min-width: 375px) and (max-width: 425px){
     #main-container{
         width: 100%;
         overflow-x: hidden;
@@ -184,6 +182,9 @@
     h1{
         font-size: 25px;
     }
+    header{
+        justify-content: center;
+    }
     header>nav {
         display: none;
     }
@@ -196,6 +197,13 @@
         height: 138vh;
         text-align: center;
         /*width: 99%;*/
+    }
+    main>section:first-child>div>p{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    main>section:first-child>div{
+        margin-right: 0;
     }
     main>section:first-child>img{
         display: none;
@@ -320,5 +328,195 @@
     }
     .contact{
         margin-top: 40px;
+    }
+}
+
+@media all and (min-width: 425px) and (max-width: 768px){
+    #main-container{
+        width: 100%;
+        overflow-x: hidden;
+        margin-left: 0 !important;
+    }
+    
+    main{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    h1{
+        font-size: 20px;
+    }
+    header{
+        justify-content: center;
+    }
+    header>nav {
+        display: none;
+    }
+    #logo {
+        text-align: center;
+
+    }
+    main>section:first-child{
+        top: 100px;
+        height: 165vh;
+        text-align: center;
+        /*width: 99%;*/
+    }
+    main>section:first-child>div {
+        margin-right: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    main>section:first-child>div>img{
+        margin: 30px;
+        display: block;
+        width: 350px;
+        height: auto;
+        box-shadow: 7px 8px 4px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 35px;
+    }
+    main>section:first-child>div>p{
+        margin-left: 70px;
+        margin-right: 70px;
+        font-size: 15px !important;
+    }
+    main>section:first-child>div{
+        margin-right: 0;
+    }
+    main>section:first-child>img{
+        display: none;
+    }
+    /* about me */
+
+    main>section:nth-child(2){
+        height: 200vh;
+        position: relative;
+        text-align: center;
+    }
+
+    main>section:nth-child(2)>div{
+        width: 320px;
+    }
+
+
+    /* skills */
+    main>section:nth-child(3){
+        height: 165vh;
+    }
+    .programming-container,
+    .tools {
+        display: flex;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        scroll-snap-type: x mandatory;
+    }
+
+    .programming-container > img,
+    .tools > img {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+
+    .programming-container > img {
+        margin-right: 10px; /* Add some spacing between images */
+    }
+    
+    .design, .mobile, .web, .software{
+        position: absolute;
+        left: 150px;
+
+    }
+    .design{
+        top: 170px;
+    }
+    .mobile{
+        top: 170px;
+        left: 440px;
+
+    }
+    .web{
+        top: 510px;
+
+    }
+    .software{
+        top: 510px;
+        left: 440px;
+
+    }
+    /* main>section:nth-child(3)>div:nth-child(2)>div>div>div:nth-child(3){
+        position: absolute;
+    } */
+    .line-img {
+        position: static;
+        rotate: 180;
+    }
+    /* projetcts */
+
+    main>section:nth-child(4){
+        height: 170vh;
+    }
+    .projects-2nd-row{
+        display: none;
+    }
+    .project-img{
+        width: 300px;
+    }
+    .assignment-asset{
+        width: 300px;
+        height: 300px;
+    }
+    /* Activities */
+
+    main>section:nth-child(5) > div > img {
+        width: 600px;
+    }
+    main>section:nth-child(5) > div > p {
+        font-size: 30px;
+    }
+
+    /* Galllery */
+    /* Survices */
+    main>section:nth-child(7){
+        height: 140vh;
+    }
+
+    /* Contact */
+    main>section:nth-child(8){
+        height: 85vh;
+    }
+    main>section:nth-child(8) > h1 {
+        margin-bottom: 50px;
+    }
+    .contact{
+        flex-wrap: wrap;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+        width: 300px;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-info{
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-form{
+        justify-content: center;
+    }
+    .contact{
+        margin-top: 40px;
+    }
+    fieldset{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
