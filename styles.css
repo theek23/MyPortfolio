@@ -231,19 +231,19 @@ main>section:nth-child(3)>div:nth-child(2)>div>div>div:nth-child(3)>ul>li {
     position: relative; /* Adjust the spacing between the marker and text */
     /* margin-bottom: 30px; Adjust the vertical spacing between list items */
     margin-top: 20px;
-  
-    &::before {
-        content: "";
-        width: 20px; 
-        height: 20px;
-        background-color: #EBCB79;
-        border-radius: 50%;
-        position: absolute;
-        left: -30px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
 }
+main>section:nth-child(3)>div:nth-child(2)>div>div>div:nth-child(3)>ul>li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    background-color: #EBCB79;
+    border-radius: 50%;
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 .skill-img{
     width: 40px;
     height: 40px;
@@ -405,7 +405,7 @@ main>section:nth-child(5) > div {
 }
 
 main>section:nth-child(5) > div > img {
-    width: 800;
+    width: 800px;
 }
 main>section:nth-child(5) > div > p {
     text-align: center;

@@ -11,22 +11,32 @@
         background-color: black;
     }
 } */
-@media screen and  (max-width: 375px){
+@media  (max-width: 376px){
     #main-container{
-        width: 200vw;
+        width: 100%;
         overflow-x: hidden;
+        margin-left: 0 !important;  
+    }
+    body{
+        overflow-x: hidden;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    h1{
+        font-size: 25px;
     }
     header>nav {
         display: none;
     }
     #logo {
         text-align: center;
-        display: none;
+
     }
     main>section:first-child{
         top: 140px;
         height: 138vh;
-        background-color: beige;
+
+        /*width: 99%;*/
     }
     main>section:first-child>img{
         display: none;
