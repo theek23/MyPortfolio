@@ -643,14 +643,16 @@ textarea {
     margin-left: 10px;
 }
 footer{
-    height: 70px;
+    position: relative;
+    bottom: 0;
+    height: 60px;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 footer>p{
-    position: relative;
-    top: 50%;
-    bottom: 50%;
     color: white;
-    text-align: center;
+    font-size: 13px;
 }
