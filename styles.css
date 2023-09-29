@@ -498,6 +498,7 @@ main>section:nth-child(7) > h1 {
 main>section:nth-child(7) >div{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 main>section:nth-child(7) >div> div {
@@ -542,7 +543,6 @@ main>section:nth-child(7) >div> div>button:hover{
 /* Contact Us */
 main>section:nth-child(8){
     position: relative;
-    height: 92vh;
 }
 main>section:nth-child(8) > h1 {
     font-size: 35px;
