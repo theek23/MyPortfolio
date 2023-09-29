@@ -167,7 +167,7 @@
     }
 }
 
-@media all and (min-width: 375px) and (max-width: 425px){
+@media all and (min-width: 375px) and (max-width: 426px){
     #main-container{
         width: 100%;
         overflow-x: hidden;
