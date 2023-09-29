@@ -11,29 +11,30 @@
         background-color: black;
     }
 } */
-@media all and (min-width: 321px) and (max-width: 375px){
+@media screen and  (max-width: 375px){
     #main-container{
-        margin-left: 10ox;
-        margin-right: 10px;
+        width: 200vw;
+        overflow-x: hidden;
     }
     header>nav {
         display: none;
     }
     #logo {
         text-align: center;
+        display: none;
     }
     main>section:first-child{
         top: 140px;
-        height: 100vh;
+        height: 138vh;
+        background-color: beige;
     }
     main>section:first-child>img{
         display: none;
     }
-
     /* about me */
 
     main>section:nth-child(2){
-        height: 252vh;
+        height: 296vh;
         position: relative;
         text-align: center;
     }
@@ -44,4 +45,61 @@
 
 
     /* skills */
+    main>section:nth-child(3){
+        height: 266vh;
+    }
+    .programming-container,
+    .tools {
+        display: flex;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        scroll-snap-type: x mandatory;
+    }
+
+    .programming-container > img,
+    .tools > img {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+
+    .programming-container > img {
+        margin-right: 10px; /* Add some spacing between images */
+    }
+    
+    .design, .mobile, .web, .software{
+        position: absolute;
+        left: 20px;
+
+    }
+    .design{
+        top: 170px;
+    }
+    .mobile{
+        position: absolute;
+        top: 510px;
+
+    }
+    .web{
+        position: absolute;
+        top: 850px;
+
+    }
+    .software{
+        top: 1200px;
+
+    }
+    /* main>section:nth-child(3)>div:nth-child(2)>div>div>div:nth-child(3){
+        position: absolute;
+    } */
+    .line-img {
+        position: static;
+        rotate: 180;
+    }
+    /* projetcts */
+
+    main>section:nth-child(4){
+        height: 250vh;
+    }
+    .projects-2nd-row{
+        display: none;
+    }
 }

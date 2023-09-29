@@ -20,6 +20,7 @@ body {
 header{
     position: fixed;
     height: 70PX;
+    width: max-content;
     display: flex;
     align-items: center;
     background: linear-gradient(91deg, #D3E7E7 0.56%, #E2ECEC 98.69%);
@@ -191,6 +192,7 @@ main>section:nth-child(3)>div:nth-child(2)>div>div>div>div:first-child{
     width: 55px;
     background-color: #EBCB79;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
@@ -259,20 +261,20 @@ main>section:nth-child(3)>div:nth-child(3)>div{
     justify-content: center;
     margin-top: 50px;
 }
-main>section:nth-child(3)>div:nth-child(3)>div>img{
+main>section:nth-child(3)>div:nth-child(3)>div>div>img{
     border-radius: 20px;
     background-color: #9B9B9B;
     box-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
     transition: transform 0.2s ease, box-shadow 0.3s ease;
 }
-main>section:nth-child(3)>div:nth-child(3)>div>img:hover{
+main>section:nth-child(3)>div:nth-child(3)>div>div>img:hover{
     transform: scale(1.05); 
     box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.4); 
 }
 main>section:nth-child(3)>div:nth-child(3)>div:first-child{
     margin-top: 20px !important;
 }
-main>section:nth-child(3)>div:nth-child(3)>div>img{
+main>section:nth-child(3)>div:nth-child(3)>div>div>img{
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -281,7 +283,7 @@ main>section:nth-child(3)>div:nth-child(3)>div>img{
     height: 92vh;
 } */
 
-/* Skills section */
+/* Projects section */
 main>section:nth-child(4){
     position: relative;
     height: 170vh;
@@ -297,6 +299,9 @@ main>section:nth-child(4)>h1{
 }
 main>section:nth-child(4)>section>div:nth-child(2){
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 .project-img{
     border-radius: 20px;
