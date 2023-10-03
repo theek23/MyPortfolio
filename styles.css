@@ -368,7 +368,6 @@ main>section:nth-child(4)>section>div:nth-child(2){
     100% {
         transform: translateX(calc((-100%/5)*4));
     }
-
 }
 .assignmnet-title{
     font-size: 30px;
