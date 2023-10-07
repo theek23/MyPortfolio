@@ -1,0 +1,17 @@
+*{
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+  section {
+      height: auto;
+      width: 100%;
+      overflow-x: hidden;
+    }
+    .col img:hover {
+      transform: scale(1.2);
+    }
+    .nav-link{
+      font-weight: 600;
+    }
+    .nav-link:hover{
+      color: crimson;
+    }
