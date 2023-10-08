@@ -1,6 +1,4 @@
-
 function appendToResult(value) {
-    clickedCount();
     if (value=="=") {
         calculate();
     }else{
