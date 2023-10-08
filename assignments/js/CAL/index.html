@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="../../../assets/normalize.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            display: flex;
+            justify-content: center;
+            height: 100vh; 
+            margin: 0;
+            overflow-x: hidden; 
+        }
+        .calculator {
+            width: 390px;
+            height: 100vh;
+            display: block;
+            background-color: black;
+        }
+        .calculator-container{
+            position: absolute;
+            bottom: 0;
+        }
+        h1{
+            color: white;
+            font-size: 80px;
+            font-weight: 400;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+        .buttons {
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+        }
+        button {
+            width: 84px;
+            height: 84px;
+            border-radius: 50%;
+            border: none;
+            margin: 5px;
+            font-size: 30px;
+            font-weight: 500;
+            color: white;
+        }
+        .zero-button {
+            width: 183px !important;
+            border-radius: 40px !important;
+        }
+
+        .yellow {
+            background: #F69906;
+        }
+        .light-gray{
+            background: #A0A0A0;
+            color: black !important;
+        }
+        .dark-gray{
+            background: #313131;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator-container">
+            <h1 id="result">0</h1>
+            <div id="buttons" class="buttons">
+                <div class="line-1">
+                    <button id="ac" class="light-gray calc-button" onclick="clearResult()">AC</button>
+                    <button id="%" class="light-gray calc-button" onclick="appendToResult('%')">%</button>
+                    <button id="%" class="light-gray calc-button" onclick="appendToResult('%')">%</button>
+                    <button id="/" class="yellow calc-button" onclick="appendToResult('/')">/</button>
+                </div>
+                <div class="line-2">
+                    <button id="7" class="dark-gray calc-button" onclick="appendToResult('7')">7</button>
+                    <button id="8" class="dark-gray calc-button" onclick="appendToResult('8')">8</button>
+                    <button id="9" class="dark-gray calc-button" onclick="appendToResult('9')">9</button>
+                    <button id="x" class="yellow calc-button" onclick="appendToResult('*')">x</button>
+                </div>
+                <div class="line-3">
+                    <button id="4" class="dark-gray calc-button" onclick="appendToResult('4')">4</button>
+                    <button id="5" class="dark-gray calc-button" onclick="appendToResult('5')">5</button>
+                    <button id="6" class="dark-gray calc-button" onclick="appendToResult('6')">6</button>
+                    <button id="-" class="yellow calc-button" onclick="appendToResult('-')">-</button>
+                </div>
+                <div class="line-4">
+                    <button id="1" class="dark-gray calc-button" onclick="appendToResult('1')">1</button>
+                    <button id="2" class="dark-gray calc-button" onclick="appendToResult('2')">2</button>
+                    <button id="3" class="dark-gray calc-button" onclick="appendToResult('3')">3</button>
+                    <button id="+" class="yellow calc-button" onclick="appendToResult('+')">+</button>
+                </div>
+                <div class="line-5">
+                    <button id="0" class="zero-button dark-gray calc-button" onclick="appendToResult('0')">0</button>
+                    <button id="." class="dark-gray calc-button" onclick="appendToResult('.')">.</button>
+                    <button id="=" class="yellow calc-button"  onclick="appendToResult('=')">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
