@@ -14,6 +14,28 @@ body {
 main{
     overflow: hidden;
 }
+#loader {
+    transition: opacity 1s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: #d3e7e7;
+}
+#loader>div {
+    width: 290px;
+    height: 290px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background: url("..//assets/loading.gif");
+    background-size: cover;
+    background-position: center;
+}
 #main-container{
     margin-left: 100px;
     margin-right: 100px;
