@@ -11,7 +11,9 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(91deg, #D3E7E7 0.56%, #E2ECEC 98.69%);
 }
-
+main{
+    overflow: hidden;
+}
 #main-container{
     margin-left: 100px;
     margin-right: 100px;

@@ -1,5 +1,4 @@
-/* Mobile Medium 320-375 */
-@media all and (min-width: 320px) and (max-width: 375px){
+@media all and (min-width: 300px) and (max-width: 320px){
     #main-container{
         width: 100%;
         overflow-x: hidden;
@@ -149,7 +148,7 @@
     input[type="email"],
     input[type="number"],
     textarea {
-        width: 300px;
+        width: 200px;
         padding: 10px;
         border-radius: 20px;
         margin-bottom: 20px;
@@ -164,8 +163,177 @@
         margin-top: 40px;
     }
 }
+/* Mobile Medium 320-375 */
+@media all and (min-width: 320px) and (max-width: 375px){
+    #main-container{
+        width: 100%;
+        overflow-x: hidden;
+        margin-left: 0 !important;
+    }
+    
+    main{
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    h1{
+        font-size: 25px;
+    }
+    header{
+        justify-content: center;
+    }
+    header>nav {
+        display: none;
+    }
+    #logo {
+        text-align: center;
+
+    }
+    main>section:first-child{
+        top: 100px;
+        height: max-content;
+        text-align: center;
+        /*width: 99%;*/
+    }
+    main>section:first-child>div{
+        margin-right: 0;
+    }
+    main>section:first-child>div>p{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    main>section:first-child>img{
+        display: none;
+    }
+    /* about me */
+
+    main>section:nth-child(2){
+        height: 296vh;
+        position: relative;
+        text-align: center;
+    }
+
+    main>section:nth-child(2)>div{
+        width: 320px;
+    }
+
+
+    /* skills */
+    main>section:nth-child(3){
+        height: 266vh;
+    }
+    .programming-container,
+    .tools {
+        display: flex;
+        overflow-x: auto; /* Allow horizontal scrolling */
+        scroll-snap-type: x mandatory;
+    }
+
+    .programming-container > img,
+    .tools > img {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+    }
+
+    .programming-container > img {
+        margin-right: 10px; /* Add some spacing between images */
+    }
+    
+    .design, .mobile, .web, .software{
+        position: absolute;
+        left: 100px;
+
+    }
+    .design{
+        top: 170px;
+    }
+    .mobile{
+        position: absolute;
+        top: 510px;
+
+    }
+    .web{
+        position: absolute;
+        top: 850px;
+
+    }
+    .software{
+        top: 1200px;
+
+    }
+    /* main>section:nth-child(3)>div:nth-child(2)>div>div>div:nth-child(3){
+        position: absolute;
+    } */
+    .line-img {
+        position: static;
+        rotate: 180;
+    }
+    /* projetcts */
+
+    main>section:nth-child(4){
+        height: 200vh;
+    }
+    .projects-2nd-row{
+        display: none;
+    }
+    .project-img{
+        width: 300px;
+    }
+    .assignment-asset{
+        width: 300px;
+        height: 300px;
+    }
+    /* Activities */
+
+    main>section:nth-child(5) > div > img {
+        width: 400px;
+    }
+    main>section:nth-child(5) > div > p {
+        font-size: 25px;
+    }
+
+    /* Galllery */
+    /* Survices */
+    main>section:nth-child(7){
+        height: 230vh;
+    }
+
+    /* Contact */
+    main>section:nth-child(8){
+        height: 150vh;
+    }
+    main>section:nth-child(8) > h1 {
+        margin-bottom: 50px;
+    }
+    .contact{
+        flex-wrap: wrap;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+        width: 250px;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+    .contact-info{
+        height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .contact-info>div>p{
+        font-size: 13px;
+    }
+    .contact{
+        margin-top: 40px;
+    }
+}
 /* Mobile Large 375-325 */
-@media all and (min-width: 375px) and (max-width: 425px){
+@media all and (min-width: 375px) and (max-width: 426px){
     #main-container{
         width: 100%;
         overflow-x: hidden;
@@ -303,7 +471,7 @@
 
     /* Contact */
     main>section:nth-child(8){
-        height: 85vh;
+        height: 135vh;
     }
     main>section:nth-child(8) > h1 {
         margin-bottom: 50px;
@@ -331,7 +499,7 @@
     }
 }
 /* Tab medium 425-768 */
-@media all and (min-width: 425px) and (max-width: 768px){
+@media all and (min-width: 427px) and (max-width: 768px){
     #main-container{
         width: 100%;
         overflow-x: hidden;
@@ -481,7 +649,7 @@
 
     /* Contact */
     main>section:nth-child(8){
-        height: 85vh;
+        height: 125vh;
     }
     main>section:nth-child(8) > h1 {
         margin-bottom: 50px;
@@ -670,7 +838,7 @@
 
     /* Contact */
     main>section:nth-child(8){
-        height: 85vh;
+        height: 125vh;
     }
     main>section:nth-child(8) > h1 {
         margin-bottom: 50px;
@@ -765,6 +933,15 @@
     main>section:nth-child(7){
         height: max-content;
     }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+        width: 400px;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
 }
 /* laptop medium 1024-1440 */
 @media all and (min-width: 1025px) and (max-width: 1440px){
@@ -810,5 +987,25 @@
 
     main>section:nth-child(7){
         height:max-content;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+        width: 350px;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+    }
+}
+@media all and (min-width: 1024px) and (max-width: 1161px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="number"],
+    textarea {
+        width: 400px;
+        padding: 10px;
+        border-radius: 20px;
+        margin-bottom: 20px;
     }
 }
