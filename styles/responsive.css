@@ -1009,3 +1009,46 @@
         margin-bottom: 20px;
     }
 }
+
+@media all and (max-width:768px){
+    .hamber {
+        display: block;
+        z-index: 100;
+    }
+
+    .hamber.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamber.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamber.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navMenu {
+        position: fixed;
+        left: -100%;
+        top: 7px;
+        gap: 0;
+        flex-direction: column;
+        background-color: black;
+        opacity: 0.8;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        z-index: 100;
+
+    }
+
+    .nav-item {
+        margin: 16px 0;
+
+    }
+
+    .navMenu.active {
+        left: 0;
+    }
+}

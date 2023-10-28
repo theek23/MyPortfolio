@@ -14,28 +14,6 @@ body {
 main{
     overflow: hidden;
 }
-#loader {
-    transition: opacity 1s;
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: #d3e7e7;
-}
-#loader>div {
-    width: 290px;
-    height: 290px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-    background: url("..//assets/loading.gif");
-    background-size: cover;
-    background-position: center;
-}
 #main-container{
     margin-left: 100px;
     margin-right: 100px;
@@ -182,6 +160,87 @@ main>section:nth-child(2)>div>p{
     margin-right: 20px;
     font-size: 17px;
     text-align: justify;
+}
+.cv-button{
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 20px;
+    background-color: #2980b9;
+    color: #FFF;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 17px;
+}
+.cv-button:hover{
+    background-color: #0056b3;
+    color: #fff;
+    transform: scale(1.05); 
+    box-shadow: 0px 8px 8px 0px rgba(0, 0, 0, 0.4);
+}
+
+.col-about li {
+    list-style: none;
+}
+
+.col-about .info i {
+    color: black;
+    font-size: 30px;
+    margin: 15px;
+}
+
+.col-about .info a {
+    color: black;
+    text-decoration: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 10;
+    font-size: 18px;
+}
+
+.col-about .info a:hover {
+    color: rgb(144, 144, 144);
+}
+
+.col-about .info li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 10;
+    font-size: 18px;
+}
+
+.col-about .interest i {
+    color: black;
+    font-size: 30px;
+    margin: 20px;
+}
+
+.col-about .interest h5 {
+    font-size: 15px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+}
+
+
+
+
+.col-about img {
+    width: 2.5rem;
+    height: auto;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.col-about li {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 10;
+    font-size: 18px;
+}
+
+.col-about .ic li:hover {
+    transform: scale(1.1);
 }
 
 /* Skills Section */
@@ -679,4 +738,18 @@ footer{
 footer>p{
     color: white;
     font-size: 13px;
+}
+.hamber {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+
 }

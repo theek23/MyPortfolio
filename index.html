@@ -19,28 +19,60 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+    <script src="https://kit.fontawesome.com/ec93572e31.js" crossorigin="anonymous"></script>
+    
+    <script src="assets/JQuery/jquery-3.6.0.min.js"></script>
 
 <!--    <meta name="viewport" content="width=device-width initial-scale=1">-->
-
+    <style>
+        #loader {
+            transition: opacity 1s;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background: #d3e7e7;
+        }
+        #loader>div {
+            width: 290px;
+            height: 290px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            background: url("assets/loading.gif");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
 </head>
 <body>
-    <div class="loader-container">
-        <div class="loader"></div>
-    </div>
     <section id="main-container">
         <!----------------------------Navigation Bar Start----------------------------->
         <header class="header">
             <a href="#home"><img id="logo" src="assets\logo.png" alt="logo"></a>
             <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#activities">Activities</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
+                <ul class="navMenu">
+                    <li class="nav-item"><a href="#about">About Me</a></li>
+                    <li class="nav-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#activities">Activities</a></li>
+                    <li class="nav-item"><a href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a href="#services">Services</a></li>
+                    <li class="nav-item"><a href="#contact">Contact Me</a></li>
                 </ul>
+
+                <div class="hamber">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
         </header>
         <!----------------------------Navigation Bar End----------------------------->
@@ -91,15 +123,36 @@
                     <br>
                     <p>I have 5+ years of hand zone skills related to development. And already I have started my software company.</p>
                 <p id="skills"></p>
-
+                    <button class="cv-button">Download CV</button>
                 </div>
-                <div class="info-box1">
+                <div class="col-about">
                     <h3>Personal Info</h3>
+                    <nav class="info">
+                        <li><i class="fa-solid fa-cake-candles"></i><a href="">2003.07.10</a></li>
+                        <li><i class="fa fa-envelope"></i><a href="mailto:dinethpanditha9@gmail.com">theekshanadesilva28@gmail.com</a></li>
+                        <li><i class="fa fa-phone"></i><a href="tel:+94772427603">&nbsp;+94765895457</a></li>
+                        <li><i class="fa fa-skype"></i><a href="dineth">&nbsp;theek23</a></li>
+                        <li><i class="fa fa-map-marker"></i><a href="location.com">&nbsp;&nbsp;&nbsp;Check Me</a></li>
+                    </nav>
+                    <div class="interest">
+                        <h5>Interested</h5>
+                        <i class="fa fa-code"></i>
+                        <i class="fa fa-music"></i>
+                        <i class="fa fa-plane"></i>
+                        <i class="fa fa-cutlery"></i>
+                    </div>
                 </div>
-                <div class="info-box2">
+                <div class="col-about">
                     <h3>Title</h3>
-                    <p></p>
-                    
+                    <div class="ic">
+                        <li><img src="assets/icons/other/icons8-java-100.png" alt="">&nbsp;&nbsp;Java Application Development</li>
+                        <li><img src="assets/icons/other/icons8-web-development-100.png" alt="">&nbsp;&nbsp;Web Development</li>
+                        <li><img src="assets/icons/other/icons8-mobile-app-development-100.png" alt="">&nbsp;&nbsp;Mobile App Development</li>
+                        <li><img src="assets/icons/other/icons8-ui-design-96.png" alt="">&nbsp;&nbsp;UI/UX Design</li>
+                        <li><img src="assets/icons/other/icons8-website-bug-100.png" alt="">&nbsp;&nbsp;Bug Fixing</li>
+                        <li><img src="assets/icons/other/icons8-database-100.png" alt="">&nbsp;&nbsp;Database Handling</li>
+                        <li><img src="assets/icons/other/icons8-transaction-declined-80.png" alt="">&nbsp;&nbsp;Pos System</li>
+                    </div>
                 </div>
             </section>
             <!----------------------------About Section End-------------------------------->

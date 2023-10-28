@@ -1,6 +1,21 @@
 let loader = document.getElementById("loader");
-window.addEventListener("load", function () {
-    console.log("This message will print just after fully loading the website")
+function hideLoader() {
     loader.style.display = 'none';
-    console.log("This message will print just after fully loading the website")
+}
+setTimeout(function () {
+    hideLoader();
+}, 3000);
+
+
+$(document).ready(function () {
+    const hamber = document.querySelector(".hamber");
+    const navMenu = document.querySelector(".navMenu");
+    hamber.addEventListener("click", () => {
+        hamber.classList.toggle("active");
+        navMenu.classList.toggle("active");
+    })
+    document.querySelector(".nav-link").forEach(n => n.addEventListener("click", () => {
+        hamber.classList.remove("active");
+        navMenu.classList.remove("active");
+    }));
 });
